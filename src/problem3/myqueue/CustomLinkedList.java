@@ -1,5 +1,5 @@
-package adt;
-import node.Node;
+package problem3.myqueue;
+import problem3.node.Node;
 public class CustomLinkedList {
 	Node head;
 	private int size;
@@ -75,26 +75,7 @@ public class CustomLinkedList {
 		return(response);
 		
 	}
-	public void sort() {
-		int iters2=0;
-		if (head!=null){
-		Node temp=head;
-		while(iters2<=size) {
-			int iters=0;
-			temp=head;
-		while(iters<=size && temp.getNext()!=null) {
-		if(temp.getNext().getData()<temp.getData()) {
-			int var=temp.getData();
-			temp.setData(temp.getNext().getData());
-			temp.getNext().setData(var);
-		}
-		temp=temp.getNext();
-		iters=iters+1;
-		}
-		iters2=iters2+1;
-		}
-		}
-	}
+	
 	public int getSize() {
 		return size;
 	}
