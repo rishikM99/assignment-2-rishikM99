@@ -1,7 +1,7 @@
 package problem3.myqueue;
 import problem3.node.Node;
 public class CustomLinkedList {
-	Node head;
+	public Node head;
 	private int size;
 	public CustomLinkedList() {
 		this.size=0;
