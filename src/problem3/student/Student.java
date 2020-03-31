@@ -1,4 +1,4 @@
-package student;
+package problem3.student;
 
 public class Student implements Comparable<Student>{
 	private Integer id;
